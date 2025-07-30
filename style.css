@@ -249,6 +249,37 @@ header {
   color: #1a1a1a;
 }
 
+/* Project Section */
+
+.project-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  margin: 7rem 0;
+  gap: 20px;
+}
+
+.project img {
+  width: 100%;
+  /* margin: 0 1rem; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1fr;
+  grid-row: 1fr;
+}
+
+.project-overlay img {
+  width: 30px;
+  background-color: white;
+
+  z-index: 10;
+}
+
 /* Footer */
 
 footer {
@@ -405,7 +436,7 @@ p {
     text-align: left;
   }
 
-  .about-header-name{
+  .about-header-name {
     font-size: 12px;
   }
 
