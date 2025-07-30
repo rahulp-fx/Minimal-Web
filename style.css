@@ -389,9 +389,10 @@ p {
     text-align: center;
   }
 
-  header, .header-nav a {
-  font-size: 12px;
-}
+  header,
+  .header-nav a {
+    font-size: 12px;
+  }
 
   .hero-section-about {
     padding: 1.5rem;
@@ -401,7 +402,19 @@ p {
     /* flex-direction: column; */
     gap: 1rem;
     padding-bottom: 1.5rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .about-header-name{
+    font-size: 12px;
+  }
+
+  .about-header-avatar img {
+    width: 36px;
+  }
+
+  .about-header-links img {
+    width: 28px;
   }
 
   .container-about h1,
