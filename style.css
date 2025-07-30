@@ -57,7 +57,7 @@ header {
 
 header li {
   list-style: none;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .header-me {
@@ -136,21 +136,17 @@ header li {
   justify-content: center;
 }
 
-.about-header ul {
-  list-style: none;
+.about-header-links {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-right: 0.5rem; */
 }
 
-.about-header li {
-  margin-right: 0.5rem;
-}
-
-.about-header li img {
+.about-header-links img {
   width: 36px;
   height: 36px;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .hero-section-illustration img {
@@ -297,6 +293,12 @@ p {
   .skill-section h2 {
     font-size: 2.5rem;
   }
+
+  .detailed-contact-right img {
+    width: 50px;
+    margin: 2rem;
+    padding: 2rem 0;
+  }
 }
 
 /* --- For Mobile Phones (up to 768px) --- */
@@ -341,6 +343,11 @@ p {
     font-size: 1rem;
   }
 
+  /* .detailed-contact-right img {
+    width: 50px;
+    margin: 2rem;
+    padding: 2rem 0;
+  } */
 }
 
 /* .detailed-contact {
