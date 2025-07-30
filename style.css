@@ -251,7 +251,7 @@ header {
 
 /* Project Section */
 
-.project-grid {
+/* .project-grid {
   display: grid;
   width: 100%;
   height: auto;
@@ -264,20 +264,72 @@ header {
 
 .project img {
   width: 100%;
-  /* margin: 0 1rem; */
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   grid-column: 1fr;
   grid-row: 1fr;
+} */
+
+/* Project section animated */
+
+.project-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  margin: 7rem 0;
+  gap: 20px;
 }
 
-.project-overlay img {
-  width: 30px;
-  background-color: white;
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
-  z-index: 10;
+.project img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.project-overlay {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18,53,91,0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: all 0.4s ease-in-out;
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-overlay .icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+
+.project-overlay a:hover .icon {
+  transform: scale(1.2); 
 }
 
 /* Footer */
@@ -375,6 +427,10 @@ p {
 @media (max-width: 1024px) {
   body {
     padding: 0 3%;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-section,
