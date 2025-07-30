@@ -55,10 +55,34 @@ header {
   font-size: 24px;
 }
 
-header li {
-  list-style: none;
+.header-nav a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgba(56, 118, 90, 0.1);
+  color: var(--darker-green);
+  /* background-color: #5380df;
+  color: var(--white); */
+  /* background-color: rgb(219, 219, 219);
+  color: var(--dark-blue); */
   margin-left: 1rem;
+  border-radius: 14px;
+  padding: 0.4rem 0.5rem;
 }
+
+/* .skills-button {
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--darker-blue);
+  color: var(--white);
+  margin: 0  0.5rem;
+
+  border-radius: 14px;
+  padding: 0.4rem 0.5rem;
+} */
 
 .header-me {
   width: 50%;
@@ -180,12 +204,7 @@ header li {
 
 footer {
   margin-bottom: 2rem;
-  width: 100%;
-}
-
-.container-footer {
   padding-top: 5rem;
-  /* margin-bottom: 1.5rem; */
   width: 100%;
   height: 400px;
   display: flex;
@@ -209,12 +228,12 @@ footer {
   background-color: rgba(217, 138, 48, 0.1);
   border-radius: 1.5rem;
   padding: 2.5rem;
-  line-height: 7rem;
   width: 70%;
   height: 100%;
   display: inline-flex;
   flex-direction: column;
   text-align: left;
+  justify-content: center;
 }
 
 .contact-section {
@@ -244,6 +263,7 @@ p {
 .detailed-contact-left img {
   object-fit: contain;
   width: 80%;
+  max-width: 180px;
   height: auto;
 }
 
@@ -272,7 +292,7 @@ p {
   }
 
   .hero-section,
-  .container-footer {
+  footer {
     flex-direction: column; /* Stacks the sections vertically */
     height: auto;
   }
@@ -292,6 +312,10 @@ p {
   .container-about h1,
   .skill-section h2 {
     font-size: 2.5rem;
+  }
+
+  .detailed-contact-left img {
+    max-width: 240px;
   }
 
   .detailed-contact-right img {
@@ -341,6 +365,10 @@ p {
   .skill-section p,
   .about-header-name p {
     font-size: 1rem;
+  }
+
+  .detailed-contact-left img {
+    max-width: 280px;
   }
 
   .detailed-contact-right img {
