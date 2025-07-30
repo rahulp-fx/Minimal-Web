@@ -295,7 +295,7 @@ p {
   }
 
   .detailed-contact-right img {
-    width: 50px;
+    width: 44px;
     margin: 2rem;
     padding: 2rem 0;
   }
@@ -343,11 +343,11 @@ p {
     font-size: 1rem;
   }
 
-  /* .detailed-contact-right img {
-    width: 50px;
+  .detailed-contact-right img {
+    width: 40px;
     margin: 2rem;
-    padding: 2rem 0;
-  } */
+    padding: 1rem 0;
+  }
 }
 
 /* .detailed-contact {
