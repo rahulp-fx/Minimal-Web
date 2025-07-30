@@ -387,8 +387,11 @@ p {
     gap: 1.5rem;
     padding: 2rem 0;
     text-align: center;
-    font-size: 18px;
   }
+
+  header, .header-nav a {
+  font-size: 12px;
+}
 
   .hero-section-about {
     padding: 1.5rem;
