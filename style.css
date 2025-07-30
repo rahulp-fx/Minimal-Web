@@ -18,6 +18,10 @@
   --white: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif; /* Your body font */
   font-weight: 400;
@@ -40,6 +44,21 @@ h6 {
   font-family: "Inter", sans-serif; /* Your heading font */
   color: var(--darker-green); /* Example heading color */
   font-weight: 600; /* A good starting weight for Inter headings */
+}
+
+/* --- Page Load Animation --- */
+@keyframes fadeInBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInBottom 0.8s ease-out forwards;
+  animation-delay: 0.1s;
 }
 
 /* Header */
@@ -69,6 +88,17 @@ header {
   margin-left: 1rem;
   border-radius: 14px;
   padding: 0.4rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.header-nav a {
+  background-color: rgba(56, 118, 90, 0.1);
+  color: var(--darker-green);
+}
+
+.header-nav a:hover {
+  background-color: rgba(56, 118, 90, 0.2);
+  transform: translateY(-2px);
 }
 
 /* .skills-button {
@@ -171,12 +201,31 @@ header {
   width: 36px;
   height: 36px;
   margin-left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-header-links a:hover img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 5px rgba(56, 118, 90, 0.4));
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero-section-illustration img {
   width: 80%;
   height: 80%;
   object-fit: contain;
+  animation: floatAnimation 4s ease-in-out infinite;
 }
 
 .container-about {
@@ -279,6 +328,12 @@ p {
   width: 30px;
   margin: 2rem;
   filter: invert(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.detailed-contact-right a:hover img {
+  transform: scale(1.15);
+  filter: invert(100%) drop-shadow(0 0 3px rgba(255, 255, 255, 0.2));
 }
 
 /* =============================================== */
